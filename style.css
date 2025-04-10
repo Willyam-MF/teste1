@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #11700c;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #11700c;
+    color: black;
+    text-align: left;
+    padding: 1em 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 15px 20px;
+    color: #555;
+}
+
+
+.btn {
+    background-color: #11700c;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 20px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #11700c;
+}
+
+img {
+    display: flex;
+    margin: 20px auto;
+    width: 200px; /* Defina o tamanho desejado */
+    height: 200px; /* Defina o tamanho desejado */
+    object-fit: cover; /* Garantir que a imagem cubra completamente o espaço */
+    border-radius: 50%; /* Tornar a imagem redonda */
+    border: 5px solid #333; 
+
+}

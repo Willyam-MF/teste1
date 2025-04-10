@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  header {
+        color: black;
+        background-color: rgb(65, 133, 66);
+        margin-top: 0;
+        margin-bottom: 15px;
+        padding: 10px;
+        display: flex; 
+        justify-content: space-between;
+        position: fixed; 
+        width: 100%;
+        top: 0;
+        z-index: 10; /* Garante que o cabeçalho fique sobre os outros elementos */
+    }
+
+    header img {
+        margin-right: 10px; 
+        width: 40px; 
+        height: 40px; 
+    }
+
+    h1 {
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    
+    body {
+    margin: 0;
+    padding: 0; 
+    background-color: rgb(36, 27, 27);
+    display: flex; 
+    flex-direction: column; /* Para que os elementos fiquem em uma coluna */
+    justify-content: center; /* Alinhamento vertical do body */
+    align-items: center; /* Centralizar horizontalmente o conteúdo */
+    height: 100vh; /* Preencher a altura da tela */
+}
+
+    .sidemenu {
+    background-color: rgb(50, 38, 38);
+    width: 250px;
+    height: 100vh;
+    padding: 20px;
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed; /* Mantém o menu fixo no lado esquerdo */
+    top: 60px; /* Mantém o menu abaixo do cabeçalho */
+    left: 0; /* Garante que o menu fique alinhado à esquerda */
+}
+
+    .sidemenu a {
+        margin: 10px 0; 
+        padding: 10px;
+        background-color: rgb(37, 41, 45); 
+        border-radius: 5px; 
+        cursor: pointer;
+        text-decoration: none;
+        color: whitesmoke;
+    }
+
+    .sidemenu a:hover {
+        background-color: rgb(56, 67, 70);
+    }
+
+   
+    .container {
+        background-color: rgb(50, 38, 38);
+        color: white;
+        width: 150px; /* Largura fixa para o formato quadrado */
+        height: 150px; /* Altura fixa para o formato quadrado */
+        margin: 10px;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Alinha o conteúdo (imagem e descrição) ao centro */
+        align-items: center; /* Alinha o conteúdo (imagem e descrição) ao centro */
+    }
+
+    .container img {
+        width: 60px; /* Tamanho da imagem */
+        height: 60px; /* Tamanho da imagem */
+        margin-bottom: 10px;
+    }
+
+
+    .container p {
+        font-size: 1rem;
+    }
+
+
+    .container-wrapper {
+    margin-left: 250px; /* O mesmo valor da largura do sidemenu */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: calc(100vh - 60px); /* Ajuste considerando o cabeçalho */
+}
+    
+ 
+</style>
+<body>
+    <header>
+        <h1>
+            <img src="spotify.png" alt="">
+            Spotfy
+        </h1>
+    </header>
+    <div class="sidemenu">
+        <a href="https://youtube.com" target="_blank">item 1</a>
+        <a href="https://youtube.com" target="_blank">item 1</a>
+        <a href="https://youtube.com" target="_blank">item 1</a>
+        <a href="https://youtube.com" target="_blank">item 1</a>
+
+  
+    </div>
+
+    
+    <div class="container-wrapper">
+        <div class="container">
+            <img src="download.jfif" alt="Imagem 1">
+            <p>Godzilla Eminem</p>
+        </div>
+        <div class="container">
+            <img src="download (1).jfif" alt="Imagem 2">
+            <p>Erva da jamaica</p>
+        </div>
+        <div class="container">
+            <img src="download (2).jfif"Imagem 3">
+            <p>courtesy call</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
